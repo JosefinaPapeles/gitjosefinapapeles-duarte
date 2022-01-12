@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <!-- link para iconos de fontawesome -->
+    <script src="https://kit.fontawesome.com/0f9b763684.js" crossorigin="anonymous"></script>
+    <!-- link a google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <!-- link a css -->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Contacto</title>
+</head>
+
+<body class="grillaContacto">
+    <header class="header">
+        <a href="../index.html"><img src="../img/logoheader.png" alt="logo-png" class="logoHeader"></a>
+        <nav class="nav">
+            <ul class="nav__links">
+                <!-- cambiar el modificador en cada html -->
+                <li class="nav__link"><a class="nav__link_a" href="../index.html">Sobre mi</a></li>
+
+                <li class="nav__link submenu"><a class="nav__link_a" href="../seccioneshtml/portfolio.html">Portfolio<i
+                            class="fas fa-sort-down"></i></a>
+                    <ul class="ulUl">
+                        <li><a class="nav__link_a desplegable"
+                                href="../seccioneshtml/portfolio.html#portofolioBranding">Branding</a></li>
+                        <li><a class="nav__link_a desplegable"
+                                href="../seccioneshtml/portfolio.html#portofolioIlustraciones">Ilustraciones</a></li>
+                        <li><a class="nav__link_a desplegable"
+                                href="../seccioneshtml/portfolio.html#portofolioSocialmedia">Social Media</a></li>
+                    </ul>
+                </li>
+                <li class="nav__link"><a class="nav__link_a" href="../seccioneshtml/imprimibles.html">Imprimibles</a>
+                </li>
+                <li class="nav__link"><a class="nav__link_a" href="../seccioneshtml/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="formContainer">
+        <div class="form__div">
+            <h2 class="titulosGrandes">Contacto</h2>
+            <p>Para dudas, consultas o presupuesto, escribime</p>
+        </div>
+        <form action="#" method="GET" class="form">
+            <label class="label_form" for="nombre">Nombre:</label>
+            <input class="form__inpu" type="text" placeholder="Ingresa tu nombre" name="nombre" required>
+            <label class="label_form" for="apellido">Apellido:</label>
+            <input class="form__inpu" type="text" placeholder="Ingresa tu apellido" name="apellido" required>
+            <label class="label_form" for="mail">Mail:</label>
+            <input class="form__inpu" type="mail" placeholder="email@ejemplo.com" name="mail" required>
+            <label class="label_form" for="mensaje">Mensaje</label>
+            <textarea class="form__inpu textarea" name="mensaje" cols="30" rows="10"
+                name="consulta">Escribe aquí tu consulta</textarea>
+            <input class="form__inpu boton" type="submit" for="enviar-nombre" value="Enviar" name="boton">
+        </form>
+    </section>
+
+    <div class="footer">
+        <footer>
+            <ul class="redes__sociales">
+                <li class="redes__sociales-link"><i class="fab fa-instagram"></i><a class="redes__sociales-link-a"
+                        href="https://www.instagram.com/josefinapapeles/" target="_blank">Instagram</a></li>
+                <li class="redes__sociales-link"><i class="fab fa-facebook-square"></i> <a
+                        class="redes__sociales-link-a" href="https://www.facebook.com/josefinapapeles"
+                        target="_blank">Facebook</a></li>
+                <li class="redes__sociales-link"><i class="fab fa-whatsapp"></i><a class="redes__sociales-link-a"
+                        href="https://bit.ly/3kBVIxR" target="_blank">Whatsapp</a></li>
+            </ul>
+            <div class="copy">
+                <i class="far fa-copyright"></i>
+                <p>copyright josefinapapeles</p>
+
+        </footer>
+</body>
+
+</html>
