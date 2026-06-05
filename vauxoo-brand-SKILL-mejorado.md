@@ -140,6 +140,12 @@ estratégico, no solo proveedor de software.
 ### Íconos
 - Estilo: flat (plano), línea delgada, sin sombras
 - Colores: paleta corporativa (gris oscuro o rojo para énfasis, dorado escaso)
+- Tamaño en piezas: 20-40px — siempre en espacios pequeños, listas, bullets
+
+### Ilustraciones
+- Estilo pana/flat con colores corporativos
+- Uso exclusivo en espacios grandes: portadas, heroes, secciones protagonistas
+- Nunca usar como ícono de lista o elemento pequeño
 
 ### Elementos Isométricos
 - Representaciones 3D simplificadas de tecnología y procesos
@@ -186,16 +192,16 @@ Esta sección documenta la anatomía visual de formatos específicos producidos 
 - Cuerpo de texto: Manrope, negro `#282C2F`, tamaño legible
 - Highlights en texto corrido: rojo `#AC0340` para frases críticas (máximo 1-2 por slide)
 - Cajas de datos/listas: fondo gris muy claro (`#F0F0F0`), borde izquierdo rojo `#AC0340`, texto negro
-- Íconos en listas: flat, rojo o gris
+- Íconos en listas: flat, rojo o gris, 24-32px
 - Quote secundaria inferior: comillas doradas `#E4A900` + texto en negro con palabras clave en rojo
 - Bloque de insight (pie de slide): fondo rojo `#AC0340`, texto blanco en caps, Sora bold — frase contundente de aprendizaje
 - Footer: franja oscura `#282C2F` con `vauxoo.com` en blanco
 
 **SLIDE DE CIERRE (última slide)**
 - Fondo: Rojo `#AC0340`
-- Texto principal: negro `#282C2F` o blanco `#FFFFFF` según contraste
-- Logo Vauxoo: versión completa a color o blanca
-- CTA: píldora con borde oscuro + botón circular rojo (o invertido en blanco)
+- Texto principal: blanco `#FFFFFF`
+- Logo Vauxoo: versión blanca
+- CTA: píldora con borde oscuro + botón circular
 - Footer: `vauxoo.com` en blanco
 
 #### Reglas específicas del carrusel
@@ -219,24 +225,24 @@ Esta sección documenta la anatomía visual de formatos específicos producidos 
 - Headline: Sora bold, negro `#282C2F`, tamaño grande, directo al dolor del cliente
 - Subheadline: Manrope, gris oscuro `#455A64`, orientado a la solución
 - CTA principal: botón fondo rojo `#AC0340`, texto blanco, Sora bold
-- Texto de apoyo al CTA: Manrope, gris claro — quita fricción ("sin compromiso", "solo una conversación")
+- Ilustración de apoyo: usar assets de carpeta `monitos/` en espacio hero (grande)
 
 **SECCIÓN PROBLEMA**
 - Fondo: Blanco o gris muy claro (`#F5F5F5`)
 - Título de sección: Sora bold, negro
-- Tarjetas de pain points: fondo blanco, borde sutil gris pálido `#B3B3B3`, ícono flat en rojo o gris
+- Tarjetas de pain points: fondo blanco, borde sutil gris pálido `#B3B3B3`, ícono flat pequeño en rojo o gris
 - Texto de tarjeta: Manrope, negro
 
 **SECCIÓN SOLUCIÓN**
 - Fondo: Blanco `#FFFFFF`
 - Título: Sora bold, negro. Palabra(s) clave en rojo `#AC0340`
 - Ícono/ilustración: isométrico o flat, colores corporativos
-- Lista de beneficios: ícono de check en rojo o verde (Odoo), texto negro
+- Lista de beneficios: ícono pequeño en rojo o verde (Odoo), texto negro
 
 **SECCIÓN PROCESO (pasos)**
 - Fondo: alterno entre blanco y gris muy claro
 - Numeración: rojo `#AC0340` o negro bold
-- Ilustraciones SVG: flat/isométrico, paleta corporativa
+- Íconos de paso: usar assets Vauxoo pequeños (20-40px) o íconos Odoo si aplica
 
 **SECCIÓN CASO DE ÉXITO**
 - Mismo lenguaje que carrusel: tarjeta con borde sutil, foto cliente circular con borde rojo, quote en negro, highlights en rojo
@@ -254,7 +260,7 @@ Esta sección documenta la anatomía visual de formatos específicos producidos 
 #### Reglas específicas de landing
 - El rojo nunca aparece como fondo de sección completa excepto en el CTA final
 - Espacio entre secciones generoso — no saturar
-- Los iconos de proceso son SVG flat o isométricos, nunca 3D realistas
+- Los iconos de proceso son SVG flat, nunca 3D realistas
 - Logo Odoo: usar versión oficial en gris cuando aparece en contexto de solución
 
 ---
@@ -299,7 +305,8 @@ Cada pillar tiene un color asignado para identificación visual. Este color pued
 - [ ] ¿Tipografía es Sora y/o Manrope?
 - [ ] ¿El logo tiene área de seguridad respetada y versión correcta según fondo?
 - [ ] ¿El tono del texto es coherente con el canal?
-- [ ] ¿Los íconos son flat, línea delgada, sin sombras?
+- [ ] ¿Los íconos son flat, tamaño pequeño (20-40px), sin sombras?
+- [ ] ¿Las ilustraciones se usan solo en espacios grandes (portadas, heroes)?
 - [ ] ¿El rojo se usa SOLO sobre fondos claros (blanco o gris claro)?
 - [ ] ¿Hay texto rojo sobre fondo oscuro? → **CORREGIR INMEDIATAMENTE**
 - [ ] ¿El dorado se usa con moderación (máximo 1-2 elementos por pieza)?
@@ -311,6 +318,126 @@ Cada pillar tiene un color asignado para identificación visual. Este color pued
 
 ---
 
-> **Sistemas de diseño detallados documentados:** Casos de Éxito (carrusel LinkedIn) y Landing Pages de industria — ver Sección 7.
-> Para otros formatos, aplicar las reglas generales de esta guía.
-> Fuente de assets oficiales: https://www.vauxoo.com/en_US/assets
+## 11. Assets Externos — URLs Directas para uso en IA
+
+Todos los assets tienen URL pública y pueden usarse directamente como `<img src="URL">`
+en artefactos HTML o como referencia en cualquier pieza generada.
+
+**Repositorio Vauxoo:** `https://github.com/JosefinaPapeles/vauxoo-assets`
+**Patrón base raw:** `https://raw.githubusercontent.com/JosefinaPapeles/vauxoo-assets/main/`
+
+---
+
+### Regla de uso: ilustraciones vs íconos
+
+| Tipo | Cuándo usar | Tamaño en pieza |
+|------|-------------|-----------------|
+| **Ilustraciones** (carpeta `monitos/`) | Portadas, slides hero, secciones grandes, espacios visuales protagonistas | Grande — 180px+ de alto |
+| **Íconos Vauxoo** (raíz del repo) | Listas, bullets, etiquetas, proceso paso a paso, espacios pequeños | Pequeño — 20-40px |
+| **Íconos apps Odoo** | Cuando se referencia un módulo específico de Odoo | Pequeño — 24-40px |
+
+---
+
+### 11.1 Logos Vauxoo
+
+| Archivo | URL directa | Usar sobre |
+|---------|-------------|------------|
+| Logo blanco | `https://raw.githubusercontent.com/JosefinaPapeles/vauxoo-assets/main/logo_blanco.svg` | Fondos oscuros y rojos |
+| Logo negro | `https://raw.githubusercontent.com/JosefinaPapeles/vauxoo-assets/main/logo_negro.svg` | Fondos claros |
+| Logo horizontal color | `https://raw.githubusercontent.com/JosefinaPapeles/vauxoo-assets/main/logohorizontal.svg` | Fondos blancos, uso general |
+| Logo vertical | `https://raw.githubusercontent.com/JosefinaPapeles/vauxoo-assets/main/logovertical.svg` | Formatos cuadrados/verticales |
+
+---
+
+### 11.2 Ilustraciones Vauxoo — carpeta `monitos/`
+
+**Uso:** espacios grandes, portadas, slides hero, secciones visuales protagonistas. NUNCA en espacios pequeños ni como ícono de lista.
+**Patrón:** `https://raw.githubusercontent.com/JosefinaPapeles/vauxoo-assets/main/monitos/[archivo]`
+
+| Nombre descriptivo | Archivo | Contexto |
+|--------------------|---------|----------|
+| Equipo creativo | `Creative team-pana.svg` | Equipos, cultura, diseño |
+| Superando retos | `Fighting against Coronavirus-pana.svg` | Resiliencia, retos, adversidad |
+| Equipo poderoso | `Powerful-pana.svg` | Resultados, impacto, fortaleza |
+| Preguntas / FAQ | `Questions-pana.svg` | Dudas, consultas, FAQ |
+| Metas de equipo | `Team goals-vauxoo.svg` | Objetivos, OKRs, resultados |
+| Espíritu de equipo | `Team spirit-vauxoo.svg` | Cultura, colaboración interna |
+| Cohete Vauxoo | `cohete-vauxoo.svg` | Crecimiento, velocidad, lanzamiento |
+| Cohete Vauxoo v2 | `cohete-vauxoo-1.svg` | Variante del cohete |
+| CTA / Acción | `cta.svg` | Secciones de llamada a la acción |
+| Idea / Innovación | `idea-vauxoo.svg` | Consultoría, estrategia, soluciones |
+| KPIs / Métricas | `kpis.svg` | Dashboards, reportes, resultados |
+| Mujer Vauxoo | `woman-vauxoo.svg` | Personas, equipo, diversidad |
+
+> URL completa ejemplo:
+> `https://raw.githubusercontent.com/JosefinaPapeles/vauxoo-assets/main/monitos/cohete-vauxoo.svg`
+
+---
+
+### 11.3 Íconos Vauxoo — raíz del repo
+
+**Uso:** listas, bullets, etiquetas, pasos de proceso, espacios pequeños (20-40px). NUNCA como elemento visual protagonista ni en espacios grandes.
+**Patrón:** `https://raw.githubusercontent.com/JosefinaPapeles/vauxoo-assets/main/[nombre].svg`
+
+Íconos confirmados disponibles (hay más en el repo — usar el patrón para acceder a cualquiera):
+
+| Ícono | Archivo | Uso sugerido |
+|-------|---------|--------------|
+| Gráfica de barras | `bar-chart-fill.svg` | Reportes, métricas, análisis |
+| Carrito | `basket2.svg` | Ventas, compras, e-commerce |
+| Maletín | `briefcase-fill.svg` | Proyectos, servicios, negocio |
+| Dinero | `cash.svg` | Finanzas, costos, contabilidad |
+| Chat con comillas | `chat-square-quote-fill.svg` | Testimonios, citas, soporte |
+| Chat con texto | `chat-square-text-fill.svg` | Comunicación, mensajes |
+| Chat simple | `chat-text.svg` | Conversación, atención |
+| Historial / reloj | `clock-history.svg` | Proceso, tiempo, historial |
+| Reloj | `clock.svg` | Tiempo, velocidad, plazos |
+
+> Para íconos no listados, inferir el nombre del archivo y construir la URL con el patrón.
+> Repo completo: `https://github.com/JosefinaPapeles/vauxoo-assets`
+
+---
+
+### 11.4 Logo Odoo oficial
+
+| Versión | URL directa | Usar sobre |
+|---------|-------------|------------|
+| Logo SVG transparente | `https://odoocdn.com/openerp_website/static/src/img/assets/svg/odoo_logo.svg` | Fondos claros |
+| Logo PNG transparente | `https://odoocdn.com/openerp_website/static/src/img/assets/png/odoo_logo.png` | Fondos claros |
+| Logo invertido SVG | `https://odoocdn.com/openerp_website/static/src/img/assets/svg/odoo_logo_inverted.svg` | Fondos oscuros/morados |
+
+**Colores oficiales Odoo:** Primario `#714B67` · Secundario `#017E84` · Gris `#8F8F8F`
+
+---
+
+### 11.5 Íconos de apps de Odoo
+
+**Uso:** igual que íconos Vauxoo — espacios pequeños (24-40px), listas de módulos, referencias a apps específicas.
+**Patrón:** `https://download.odoocdn.com/icons/[modulo]/static/description/icon.svg`
+
+| App | Módulo | URL directa |
+|-----|--------|-------------|
+| Inventario | `stock` | `https://download.odoocdn.com/icons/stock/static/description/icon.svg` |
+| Contabilidad | `accountant` | `https://download.odoocdn.com/icons/accountant/static/description/icon.svg` |
+| Facturación | `account` | `https://download.odoocdn.com/icons/account/static/description/icon.svg` |
+| CRM | `crm` | `https://download.odoocdn.com/icons/crm/static/description/icon.svg` |
+| Ventas | `sale` | `https://download.odoocdn.com/icons/sale/static/description/icon.svg` |
+| Compras | `purchase` | `https://download.odoocdn.com/icons/purchase/static/description/icon.svg` |
+| Manufactura | `mrp` | `https://download.odoocdn.com/icons/mrp/static/description/icon.svg` |
+| Proyectos | `project` | `https://download.odoocdn.com/icons/project/static/description/icon.svg` |
+| Registro de horas | `hr_timesheet` | `https://download.odoocdn.com/icons/hr_timesheet/static/description/icon.svg` |
+| Empleados | `hr` | `https://download.odoocdn.com/icons/hr/static/description/icon.svg` |
+| Gastos | `hr_expense` | `https://download.odoocdn.com/icons/hr_expense/static/description/icon.svg` |
+| Helpdesk | `helpdesk` | `https://download.odoocdn.com/icons/helpdesk/static/description/icon.svg` |
+| Eventos | `event` | `https://download.odoocdn.com/icons/event/static/description/icon.svg` |
+| Sitio web | `website` | `https://download.odoocdn.com/icons/website/static/description/icon.svg` |
+| Discuss | `mail` | `https://download.odoocdn.com/icons/mail/static/description/icon.svg` |
+
+> Catálogo completo de apps Odoo: `https://www.odoo.com/es/page/brand-assets`
+
+---
+
+> **Sistemas de diseño documentados:** Casos de Éxito (carrusel LinkedIn) y Landing Pages — Sección 7.
+> **Repositorio assets Vauxoo:** https://github.com/JosefinaPapeles/vauxoo-assets
+> **Assets oficiales Vauxoo:** https://www.vauxoo.com/en_US/assets
+> **Assets oficiales Odoo:** https://www.odoo.com/es/page/brand-assets
